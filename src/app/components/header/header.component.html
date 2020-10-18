@@ -42,66 +42,88 @@
   <div class="card text-white bg-secondary mb-3" style="max-width: 35rem">
     <div class="card-header text-center bg-dark">Check Availavility..</div>
     <div class="card-body">
-      <form action="#" class="form container-fluid" id="#">
-        <div class="row">
-          <div class="col-sm-6">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Enter Starting Date</label
-            >
-            <input
-              type="date"
-              class="form-control mb-4"
-              id="exampleFormControlInput1"
-            />
-            <label for="exampleFormControlSelect1" class="form-label">
-              Select Your Subject</label
-            >
-            <select
-              name="#"
-              id="exampleFormControlSelect1"
-              class="form-select mb-4"
-              aria-label=".form-select example"
-            >
-              <option selected value="#">Select Subject</option>
-              <option value="1">c</option>
-              <option value="2">c++</option>
-              <option value="3">css 5</option>
-            </select>
-          </div>
-          <div class="col-sm-6">
-            <label for="exampleFormControlSelect2" class="form-label"
-              >Select Your Branch place</label
-            >
-            <select
-              name="#"
-              id="exampleFormControlSelect2"
-              class="form-select mb-3"
-              aria-label=".form=select example"
-            >
-              <option selected value="#">Select Branch</option>
-              <option value="1">Ranchi</option>
-              <option value="2">Bokaro</option>
-              <option value="3">JamshedPur</option>
-            </select>
-            <label for="exampleFormcontrolInput2" class="form-label"
-              >Enter Number of Students</label
-            >
-            <input
-              type="number"
-              class="form-control mb-4"
-              id="exampleFormControlInput2"
-              placeholder="Number of student"
-            />
-          </div>
+
+          <form action="#" class="form container-fluid"  onsubmit="return validation()">
+            <div class="mb-3">
+              <label  class="form-label">User Name</label>
+              <input type="text"  class="form-control" name="user" id="user" autocomplete="off"/>
+              <span id="username" class="text-danger font-weight-normal"> </span>
+            </div>
+
+            <div class="mb-3">
+              <label  class="form-label"
+                >Password</label
+              >
+              <input
+                type="text"
+
+                class="form-control"
+                name="pass"
+                id="pass"
+                autocomplete="off"
+              />
+              <span id="passwords" class="text-danger font-weight-normal"> </span>
+            </div>
+
+            <div class="mb-3">
+              <label  class="form-label"
+                >Confirm Password</label
+              >
+              <input
+                type="text"
+
+                class="form-control"
+                name="conpass"
+                id="conpass"
+                autocomplete="off"
+              />
+            </div>
+            <span id="confrmpass" class="text-danger font-weight-normal"> </span>
+
+            <div class="mb-3">
+              <label  class="form-label"
+                >Contect Number</label
+              >
+              <input
+                type="text"
+
+                class="form-control"
+                name="mobile"
+                id="mobileNumber"
+              />
+              <span id="mobileno" class="text-danger font-weight-normal"> </span>
+            </div>
+
+            <div class="mb-3">
+              <label  class="form-label"
+                >Email Address</label
+              >
+              <input
+                type="text"
+                class="form-control"
+
+                aria-describedby="emailHelp"
+                name="email"
+                id="email"
+              />
+              <span id="emailids" class="text-danger font-weight-normal"> </span>
+              <div class="form-txt" id="emailHelp">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <input type="submit" name="submit" class="btn btn-success" autocomplete="off" value="submit"/>
+          </form>
         </div>
 
-        <div class="">
-          <button type="submit" class="btn btn-success mb-3">
-            Check Availavility..
-          </button>
-        </div>
-      </form>
-    </div>
-    <button onclick="headerjs()" class="btn btn-primary"> Click me to alert..</button>
-  </div>
+        <button onclick="headerjs()" class="btn btn-primary">
+          sugn-up page....
+        </button>
+      </div>
+
+
 </header>
+
+
+
+
+
